@@ -23,13 +23,34 @@ p {
 }
 
 .hero {
-  background-image: url('hero.jpg');
+  background-image: url('images/dc.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
   text-align: center;
-  color: #009929;
+  color: #ffffff;
 }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+  z-index: 1;
+}
+
+header,
+.services h2,
+.hero h2,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 2;
+}
+
 
 .hero h2 {
   font-size: 48px;
@@ -59,6 +80,12 @@ p {
 .services {
   padding: 40px 0;
   text-align: center;
+}
+
+.services h2 {
+  padding-bottom: 30px;
+  margin-top: -2px;
+  color: #ffffff;
 }
 
 .services ul {
