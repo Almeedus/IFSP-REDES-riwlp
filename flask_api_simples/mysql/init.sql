@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS email_user;
+
+USE email_user;
+
+CREATE TABLE IF NOT EXISTS emails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL
+);
